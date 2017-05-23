@@ -150,7 +150,7 @@ main {
 .photo-strip {
 	width: auto;
 	height: 145px;
-	background: #DAEDDA url(../img/photo-strip.jpg) no-repeat;
+	background: #DAEDDA url(../img/photo-strip-3.jpg) no-repeat;
 	background-size: 900px 145px;
 }
 
@@ -255,8 +255,8 @@ li > ul {
 	width: 900px;
 	height: 750px;
 	box-sizing: border-box;
-	background: #DAEDDA url(../img/collage.jpg) no-repeat;
-	background-size: 900px 900px;
+	background: #DAEDDA url(../img/collage-2.jpg) no-repeat;
+	background-size: 900px 749px;
 }
 .portfolio .all-photo {
 	display: inline-block;
