@@ -200,17 +200,17 @@ main {
 	text-align: center;
 }
 
-.services h3 {
+.small__title {
 	position: relative;
 	display: inline-block;
 	min-width: 30px;
 	margin: 30px 0;
 	font-size: 22px;
 	line-height: 22px;
-	color: #DFBF48;
+	color: #D5B53E;
 }
 
-.services h3::before {
+.small__title::before {
 	content: "";
 	position: absolute;
 	top: 2px;
@@ -221,7 +221,7 @@ main {
 	background-size: 63px 30px;
 }
 
-.services h3::after {
+.small__title::after {
 	content: "";
 	position: absolute;
 	top: 2px;
@@ -291,10 +291,38 @@ main {
 }
 
 .gifts {
-	padding: 30px 30px 30px 30px;
+	padding: 15px 30px 30px 30px;
 	clear: both;
 	text-align: left;
 }
+
+.big__title {
+	position: relative;
+	display: block;
+	min-width: 50px;
+	padding: 0 30px;
+	padding-top: 110px;
+	margin-bottom: 30px;
+	background: url(../img/title.png) no-repeat center 15px;
+	background-size: 370px auto;
+	text-align: center;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 20px;
+}
+
+.big__title::before {
+	content: "Подарочные сертевикаты";
+	position: absolute;
+	top: 52px;
+	left: 50%;
+	margin-left: -153px;
+	font-size: 27px;
+	font-weight: 500;
+	line-height: 26px;
+	color: #FEF9D2;
+}
+
 
 .gifts__text {
 	float: left;
@@ -364,42 +392,50 @@ main {
 
 
 .contacts {
-	padding: 20px;
+	padding: 0 20px 20px 20px;
+	text-align: center;
 	background: #CAE3FB url(../img/services-bg-1.png);
 	border-left: 1px solid #DCC281;
 	border-right:  1px solid #DCC281;
 }
-.contacts > h2 {
-	padding: 0;
-	margin: 0;
-	text-align: center;
-	font-size: 24px;
+
+.big__title--third::before {
+	content: "Наши салоны";
+	position: absolute;
+	top: 52px;
+	left: 50%;
+	margin-left: -80px;
+	font-size: 27px;
 	font-weight: 500;
-	line-height: 24px;
+	line-height: 26px;
+	color: #FEF9D2;
 }
+
 .contacts-left {
 	float: left;
 	width: 420px;
 	padding-right: 10px;
-	margin-top: 30px;
+	margin-top: 10px;
 	border-right: 1px solid rgba(65,79,90, 0.3);
 }
+
 .contacts-right {
 	float: right;
-	margin-top: 30px;
+	margin-top: 10px;
 	width: 420px;
 }
 
-.contacts b,
-.contacts p {
+.contacts .small__title {
+	margin-top: 0;
+	margin-bottom: 50px;
+}
+
+.contacts span {
 	display: inline-block;
 	width: 100%;
 	margin: 0;
 	margin-bottom: 16px;
-}
-
-.contacts b {
-	text-align: center;
+	text-align: left;
 }
 
 
