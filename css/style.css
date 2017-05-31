@@ -137,6 +137,7 @@ main {
 	line-height: 25px;
 	color: #93783a;
 }
+
 .about-text p{
 	margin: 0;
 	margin-bottom: 10px;
@@ -161,6 +162,7 @@ main {
 	background-size: 900px 100%;	
 	color: #2A2A2A;
 }
+
 .title {
 	position: relative;
 	display: block;
@@ -268,10 +270,12 @@ main {
 .column-3 {
 	float: left;
 }
+
 .column-2,
 .column-4 {
 	float: right;
 }
+
 .services .column-3,
 .services .column-4 {
 	height: 180px;
@@ -328,12 +332,14 @@ main {
 	float: left;
 	max-width: 550px;
 }
+
 .gifts-list {
 	padding: 0;
 	margin: 0;
 	list-style: none;
 	font-size: 0;
 }
+
 .gifts ul li {
 	padding: 0;
 	margin-left: -10px;
@@ -370,6 +376,7 @@ main {
 	background: #DAEDDA url(../img/collage-2.jpg) no-repeat;
 	background-size: 900px 749px;
 }
+
 .portfolio .all-photo {
 	display: inline-block;
 	padding: 15px 18px;
@@ -389,7 +396,6 @@ main {
 	box-shadow: 0 0 10px 2px #D5D5D5;
 	color: #90634C;
 }
-
 
 .contacts {
 	padding: 0 20px 20px 20px;
@@ -446,30 +452,96 @@ main {
 	background: #bfa664;
 	color: white;
 	background-image: linear-gradient( #c0a665 15%, #b19652 30%, #b19652 70%, #c0a665 85%);
-	text-align: center;
-}
-.partners{
-	float: left;
-	width: 150px;
 }
 
-.jobs {
+
+.our-jobs {
 	display: inline-block;
+	padding: 1px 0;
+	margin-left: 15px;
+	margin-right: 60px;
+	border-bottom: 1px solid white;
+	cursor: pointer;
+	font-size: 18px;
+	line-height: 18px;
 }
 
-.copyright {
-	float: right;
-	width: 150px;
+.our-jobs:hover {
+	color: #E6D6B4;
+	border-bottom: 1px solid #E6D6B4;
 }
- .copyright a {
-	color: #C6A699;
- }
 
+.jobs-popup {
+	position: absolute;
+	top: -230px;
+	left: 50%;
+	display: none;
+	width: 300px;
+	margin-left: -350px;
+	padding: 15px 30px;
+	text-align: left;
+	color: #000000;
+	line-height: 20px;
+	border: 1px solid #D5B53E;
+	background: #F8EDD8;
+		box-shadow: 0 0 20px 5px rgba(0, 0, 0, 0.3);
+	border-radius: 6px;
+}
+
+.jobs-popup ul {
+	padding: 0;
+	padding-left: 20px;
+}
+
+.jobs-popup li {
+	padding: 5px 0;
+}
+
+.modal-content-close {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 22px;
+	height: 22px;
+	font-size: 0;
+	background-color: transparent;
+	border: 0;
+	outline: 0;
+	cursor: pointer;
+}
+
+.modal-content-close::before,
+.modal-content-close::after {
+	content: "";
+	position: absolute;
+	top: 10px;
+	left: 2px;
+	width: 19px;
+	height: 3px;
+	background-color: #313131;
+	border-radius: 1px;
+}
+
+.modal-content-close::before {
+	transform: rotate(45deg);
+}
+
+.modal-content-close::after {
+	transform: rotate(-45deg);
+}
+
+
+
+.modal-content-show {
+	display: block;
+	z-index: 20;
+}
 
 .container {
 	width: 900px;
 	margin: 0 auto;
 }
+
 .clearfix::after {
 	content: "";
 	display: table;
