@@ -181,17 +181,39 @@
       </section>
     </main>
     <footer class="main-footer">
-      <div class="container clearfix">
-        <span class="partners">Наши партнеры :</span>
-        <span class="jobs">У нас есть свободные вакансии</span>
-      </div>
+    	<div class="container clearfix">
+	    	<a class="our-jobs">У нас есть свободные вакансии</a>
+	    	<div class="jobs-popup">
+	    		<span>Требуется:</span>  
+	    		<ul>
+	    			<li>Дамский мастер</li>
+	    			<li>Мужской мастер</li>
+	    			<li>Универсальный мастер</li>
+	    		</ul>
+					<span>Тел. +7-978-717-73-36</span><br>
+					<span>Звонить с 9.00-19.00</span>
+					<button class="modal-content-close" type="button" title="Закрыть">Закрыть</button>
+	    	</div>
+	    	<span class="partners" style="display: none;">Наши партнеры :</span>
+    	</div>
     </footer>
     <script>
-    	var link = document.querySelector(".btn-list");
-    	link.addEventListener("click", function(event) {
+    	var jobsLink = document.querySelector(".our-jobs");
+    	var jobsPopup = document.querySelector(".jobs-popup");
+    	var jobsClose = jobsPopup.querySelector(".modal-content-close"); 
+
+
+    	jobsLink.addEventListener("click", function(event) {
     		event.preventDefault();
-    		var popup = document.querySelectorAll(".test ul").classList.add("block");
+    		jobsPopup.classList.add("modal-content-show");
     	});
+
+    	jobsClose.addEventListener("click", function(event) {
+    		event.preventDefault();
+    		jobsPopup.classList.remove("modal-content-show");
+    	});
+
+
     </script>
   </body>
   </html>
